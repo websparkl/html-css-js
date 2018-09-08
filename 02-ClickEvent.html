@@ -3,23 +3,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>JavaScript Basic Example</title>
-	<script src="myjs.js"></script>
-<script type="text/javascript">
 
-/*function add(){
-	var a = parseInt(document.getElementById("fnum").value);
-	var b = parseInt(document.getElementById("snum").value);
-	var c = a + b;
-	alert("Sum is "+c);
-	document.getElementById("output").innerHTML = "<p>Addition is: "+c+"</p>";
-	
-}
-function sub(){
-	var a = parseInt(document.getElementById("fnum").value);
-	var b = parseInt(document.getElementById("snum").value);
-	var c = a < b ? (b-a) : (a-b) ;
-		alert("Subtraction is "+c);
-}*/
+
 </script>
 </head>
 <body>
@@ -30,11 +15,26 @@ function sub(){
 <td><input type="text" id="snum"></td>
 </tr>
 <tr>
-<td><input type="button" value="Add" onclick="add()"></td>
-<td><input type="button" value="Subtract" onclick="sub()"></td>
+<td><input id="add" type="button" value="Add" ></td>
+<td><input id="sub" type="button" value="Subtract"></td>
+<td><input id="mul" type="button" value="Multiply"></td>
+<td><input id="div" type="button" value="Divide"></td>
 </tr>
 </table>
 <div id="output"></div>
 <p>Hello</p>
+
+<input value="0" type="text" id="calc" size="30" height="20">
+<button type="button" id="1">1</button>
+<button type="button" id="2">2</button>
+<button type="button" id="0">0</button>
+<button type="button" id="3">3</button>
+<button type="button" id="4">4</button>
+<button type="button" id="5">5</button>
+<button type="button" id="6">6</button>
+<button type="button" id="+">+</button>
+<button type="button" id="=">=</button>
+<script src="calculator.js"></script>
+
 </body>
 </html>
