@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var ram ={id:1001,name:"Ram Kumar",
+                email:null, get address()
+                        { return "Roop Nagar"},
+        set fullDetails(emailId){this.email= emailId},
+        get fullDetails(){return "Id "+this.id+"Name "+this.name+" Email "+ this.email;}
+        };
+        ram.id;
+        ram.address;
+        Object.getOwnPropertyDescriptor(ram,"id");
+        Object.getOwnPropertyDescriptor(ram,"address");
+        ram.fullDetails="ram@yahoo.com";
+        ram.fullDetails;
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

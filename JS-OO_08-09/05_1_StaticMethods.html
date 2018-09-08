@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        // Define a Static Method
+        function MyClass(){}
+        MyClass.show=function(){
+            console.log("I am a Static Method...");
+        };
+        MyClass.prototype.print=function(){
+            console.log("I am Non Static Method");
+        }
+        MyClass.show();
+        //MyClass.print(); Give Error
+        var obj = new MyClass();
+        obj.print();
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
